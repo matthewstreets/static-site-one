@@ -16,5 +16,41 @@
             </ul>
         </nav>
 
+        <h2 class="page-title">Sign Up for the Monthly London Pocket Guide Newsletter 📰</h2>
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+
+                <div class="firstName">
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div class="lastName">
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email_address">
+                </div>
+
+                <div class="special-requests">
+                    <label for="special-requests">Do you have any special requests for future newsletters? Write them here.</label><br>
+                    <textarea id="special-requests" name="special-requests" rows="10" cols="50">Your special request(s) here...</textarea>
+                </div>
+
+                <div class="confirmation-checkbox">
+                    <label for="newsletter-confirmation">Click to confirm your subscription</label>
+                    <input type="checkbox" id="newsletter-confirmation" name="newsletter_confirmation">
+                </div>
+
+                <div>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+
+            </fieldset>
+        </form>
+
     </body>
 </html>
