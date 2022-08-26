@@ -1,12 +1,9 @@
-a {
-    color: white;
-    text-decoration: none;
-}
+
 
 blockquote {
     background-color: rgb(32, 42, 68);
     color: white;
-    font-size: 16px;
+    font-size: 2vh;
     padding: 5%;
 }
 
@@ -22,7 +19,7 @@ img {
 }
 
 p {
-    font-size: 20px;
+    font-size: 2.5vh;
 }
 
 .card {
@@ -34,12 +31,44 @@ p {
     width: 90%;
 }
 
+.card a {
+    color:rgb(32, 42, 68);
+    font-size: 2.5vh;
+}
+
+.card ul {
+    list-style: none;
+}
+
 .card-title {
     background-color: rgb(148, 30, 19);
     color: white;
-    font-size: 24px;
+    font-size: 3vh;
     padding: 5%;
     width: 90%;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    max-width: 100%;
+    margin: 0 auto 10%;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 30vw;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.image-gallery::after {
+    content: "";
+    width: 30vw;
 }
 
 .menu {
@@ -50,12 +79,24 @@ p {
     padding: 0 5%;
 }
 
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
 .menu-item {
     display: inline-block;
     padding: 10px;
 }
+
 .menu-links {
     display: flex;
+}
+
+.page-title {
+    margin: 5%;
+    font-size: 5vh;
+    text-align: center;
 }
 
 .site-header {
